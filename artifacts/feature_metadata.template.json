@@ -1,0 +1,55 @@
+{
+  "placeholder_note": "Copy this file to feature_metadata.json and replace the values with your exact training-time category mapping.",
+  "fields": {
+    "county": {
+      "label": "County",
+      "options": [
+        {"label": "County display label", "value": 1}
+      ]
+    },
+    "sex": {
+      "label": "Sex",
+      "options": [
+        {"label": "Male", "value": 1},
+        {"label": "Female", "value": 2}
+      ]
+    },
+    "education": {
+      "label": "Education",
+      "options": [
+        {"label": "None", "value": 1}
+      ]
+    },
+    "marital_status": {
+      "label": "Marital status",
+      "options": [
+        {"label": "Single / Never married", "value": 1}
+      ]
+    },
+    "livelihood": {
+      "label": "Livelihood",
+      "options": [
+        {"label": "Exact livelihood label from your model coding", "value": 1}
+      ]
+    },
+    "can_access_internet": {
+      "label": "Internet access",
+      "options": [
+        {"label": "No internet access", "value": 0.0},
+        {"label": "Can access internet", "value": 1.0}
+      ]
+    },
+    "internet_frequency": {
+      "label": "Internet frequency",
+      "options": [
+        {"label": "Daily", "value": 1}
+      ]
+    },
+    "financial_health": {
+      "label": "Financial health",
+      "options": [
+        {"label": "High", "value": 1}
+      ]
+    }
+  }
+}

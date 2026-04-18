@@ -1,0 +1,18 @@
+<svg width="900" height="420" viewBox="0 0 900 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="420" rx="28" fill="#FFFFFF"/>
+  <rect x="24" y="24" width="852" height="372" rx="24" fill="#F7FAFC" stroke="#D7E1EA"/>
+  <text x="48" y="72" fill="#10263A" font-size="30" font-family="Arial, sans-serif" font-weight="700">Professional focus</text>
+  <text x="48" y="104" fill="#607284" font-size="18" font-family="Arial, sans-serif">Project delivery, business analysis, digital banking, and applied data science</text>
+  <rect x="60" y="150" width="160" height="160" rx="20" fill="#E7F0F7"/>
+  <text x="86" y="205" fill="#144C73" font-size="20" font-family="Arial, sans-serif" font-weight="700">Project</text>
+  <text x="86" y="233" fill="#144C73" font-size="20" font-family="Arial, sans-serif" font-weight="700">Delivery</text>
+  <rect x="260" y="150" width="160" height="160" rx="20" fill="#EAF5EE"/>
+  <text x="285" y="205" fill="#2F7D59" font-size="20" font-family="Arial, sans-serif" font-weight="700">Business</text>
+  <text x="285" y="233" fill="#2F7D59" font-size="20" font-family="Arial, sans-serif" font-weight="700">Analysis</text>
+  <rect x="460" y="150" width="160" height="160" rx="20" fill="#FFF3DE"/>
+  <text x="486" y="205" fill="#B86B00" font-size="20" font-family="Arial, sans-serif" font-weight="700">Digital</text>
+  <text x="486" y="233" fill="#B86B00" font-size="20" font-family="Arial, sans-serif" font-weight="700">Banking</text>
+  <rect x="660" y="150" width="160" height="160" rx="20" fill="#F0E8F5"/>
+  <text x="690" y="205" fill="#7A4D8B" font-size="20" font-family="Arial, sans-serif" font-weight="700">Applied</text>
+  <text x="690" y="233" fill="#7A4D8B" font-size="20" font-family="Arial, sans-serif" font-weight="700">Data Science</text>
+</svg>

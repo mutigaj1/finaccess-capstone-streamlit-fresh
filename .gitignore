@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.streamlit/
+.env
+venv/
+.venv/
+*.joblib
+*.csv
+*.png
+!artifacts/README.md
+!artifacts/feature_metadata.template.json
+!figures/README.md
