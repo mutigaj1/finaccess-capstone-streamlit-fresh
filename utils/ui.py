@@ -82,7 +82,7 @@ def render_sidebar() -> None:
     st.sidebar.write(f"📧 {CONTACT['email']}")
     st.sidebar.write(f"📞 {CONTACT['phone']}")
     st.sidebar.info(
-        "Use the Streamlit page navigation in the sidebar to move between Home, Resume, Projects, and Capstone Project."
+        "Use the Streamlit page navigation in the sidebar to move between app, Resume, General Projects, and FinAccess Project."
     )
 
 

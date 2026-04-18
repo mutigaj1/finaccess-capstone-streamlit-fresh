@@ -7,7 +7,7 @@ from typing import Any
 APP_TITLE = "FinAccess 2024 Capstone Portfolio"
 APP_SUBTITLE = "Predicting Financial Access Profiles in Kenya Using FinAccess 2024"
 OWNER_NAME = "Jesse Mutiga"
-OWNER_TITLE = "PRINCE2 Agile Project Manager"
+OWNER_TITLE = "PRINCE2 Agile Project Manager and Business Analyst"
 
 CONTACT = {
     "phone": "+254-720-176-766",
@@ -30,9 +30,9 @@ HOME_INTRO = (
 )
 
 ACADEMIC_BACKGROUND = [
-    "Master’s in Data Science, Eastern University, May 2022 to Current",
-    "Bachelor’s in Economics and Statistics, Kenyatta University, Sep 2013 to Nov 2018",
-    "Diploma in Information Technology, KCA University, May 2014 to Nov 2018",
+    "Master’s in Data Science, Eastern University",
+    "Bachelor’s in Economics and Statistics, Kenyatta University",
+    "Diploma in Information Technology, KCA University",
 ]
 
 CAREER_ASPIRATIONS = [
@@ -66,7 +66,7 @@ WORK_HISTORY = [
     {
         "organization": "NCBA",
         "role": "Business Analyst & Project Manager",
-        "period": "Nov 2022 to Current",
+        "period": "",
         "start": "2022-11-01",
         "end": None,
         "highlights": [
@@ -84,7 +84,7 @@ WORK_HISTORY = [
     {
         "organization": "Stanbic Bank",
         "role": "Business Analyst",
-        "period": "Oct 2020 to Sep 2022",
+        "period": "",
         "start": "2020-10-01",
         "end": "2022-09-30",
         "highlights": [
@@ -101,7 +101,7 @@ WORK_HISTORY = [
     {
         "organization": "Tezza Business Solutions",
         "role": "Junior Business Analyst and Junior Data Scientist",
-        "period": "Feb 2018 to Oct 2020",
+        "period": "",
         "start": "2018-02-01",
         "end": "2020-10-31",
         "highlights": [
@@ -112,7 +112,7 @@ WORK_HISTORY = [
     {
         "organization": "Tezza Business Solutions",
         "role": "Change Management Intern",
-        "period": "Aug 2015 to Jul 2017",
+        "period": "",
         "start": "2015-08-01",
         "end": "2017-07-31",
         "highlights": [
@@ -122,9 +122,9 @@ WORK_HISTORY = [
 ]
 
 EDUCATION = [
-    "Master’s in Data Science, Eastern University, May 2022 to Current",
-    "Bachelor’s in Economics and Statistics, Kenyatta University, Sep 2013 to Nov 2018",
-    "Diploma in Information Technology, KCA University, May 2014 to Nov 2018",
+    "Master’s in Data Science, Eastern University",
+    "Bachelor’s in Economics and Statistics, Kenyatta University",
+    "Diploma in Information Technology, KCA University",
 ]
 
 CERTIFICATIONS = [
