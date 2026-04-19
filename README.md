@@ -8,10 +8,10 @@ A completely fresh Streamlit portfolio app for the DTSC 691 Applied Data Science
 
 ## What this app includes
 
-- A **Home / About Me** page
+- An **app / project story** page
 - A **Resume** page
-- A **Projects** page
-- A **Capstone Project** page with:
+- A **General Projects** page
+- A **FinAccess Project** page with:
   - plain-language project narrative
   - interactive prediction form
   - prediction result summary
@@ -42,8 +42,8 @@ finaccess_capstone_streamlit_fresh/
 │   └── README.md
 ├── pages/
 │   ├── 01_Resume.py
-│   ├── 02_Projects.py
-│   └── 03_Capstone_Project.py
+│   ├── 02_General_Projects.py
+│   └── 03_FinAccess_Project.py
 └── utils/
     ├── __init__.py
     ├── artifacts.py
@@ -200,6 +200,15 @@ This app was structured to fit the course UI requirements by including:
 - a resume page
 - a general projects page
 - a specific project page with explanation and interaction
+
+## Repo split and current expectation
+
+There are now two separate GitHub repos in play:
+
+- `mutigaj1/finaccess-capstone-streamlit-fresh` is the intended source-of-truth for the fresh greenfield capstone app
+- `mutigaj1/finaccess-streamlit` is the older repo and should not be treated as the fresh app unless you intentionally sync or migrate content into it
+
+If the hosted Streamlit deployment should reflect the fresh app, point Streamlit Cloud at the fresh repo, not the old empty one.
 
 ## Suggested next step
 
