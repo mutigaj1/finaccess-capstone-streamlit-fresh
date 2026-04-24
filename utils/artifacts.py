@@ -75,7 +75,6 @@ def _load_csv_if_exists(path: Path | None) -> pd.DataFrame | None:
         return None
 
 
-@st.cache_resource(show_spinner=False)
 def load_artifact_bundle() -> ArtifactBundle:
     bundle = ArtifactBundle(prediction_mode="stub")
 
