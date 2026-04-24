@@ -7,6 +7,38 @@ venv/
 *.joblib
 *.csv
 *.png
+
+# Keep deployment artifacts and figures for the capstone app.
 !artifacts/README.md
 !artifacts/feature_metadata.template.json
+!artifacts/feature_metadata.json
+!artifacts/finaccess_final_pipeline.joblib
+!artifacts/final_selected_features.joblib
+!artifacts/finaccess_final_model_name.txt
+!artifacts/final_model_comparison.csv
+!artifacts/final_model_feature_importance.csv
+!artifacts/subgroup_performance_by_sex.csv
+!artifacts/subgroup_performance_by_education.csv
+!artifacts/subgroup_performance_by_county.csv
+!artifacts/weighted_target_summary_adults.csv
+!artifacts/weighted_top_excluded_counties_adults.csv
+!artifacts/numeric_outlier_review.csv
+!artifacts/numeric_correlations.csv
+!artifacts/project_overview.pdf
+
 !figures/README.md
+!figures/adult_confusion_matrix.png
+!figures/adult_feature_importance.png
+!figures/weighted_target_distribution_adults.png
+!figures/weighted_top_excluded_counties_adults.png
+!figures/weighted_profile_by_internet_adults.png
+!figures/weighted_profile_by_financial_health_adults.png
+!figures/weighted_profile_by_education_adults.png
+!figures/weighted_profile_by_sex_adults.png
+
+# Keep lightweight source documents used by the downloads tab.
+!FINACCESS_MASTER_PROJECT_NOTEBOOK.ipynb
+!Mutiga Proposal Feedback 2 updated.docx
+!_Project Guidelines- Machine Learning Project.docx
+!FinAccess 2024 Manual.pdf
+!2024 FinAccess Questionnaire.pdf

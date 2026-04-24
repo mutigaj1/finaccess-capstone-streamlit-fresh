@@ -1,0 +1,10 @@
+group,rows,accuracy,macro_f1,excluded_recall
+Primary completed,828,0.7186,0.5007,0.2541
+Secondary completed,752,0.6503,0.5204,0.2614
+Some primary,698,0.6676,0.4623,0.1747
+None,591,0.6667,0.5326,0.2933
+Some secondary,408,0.7426,0.6319,0.6481
+Completed technical,286,0.6783,0.56,0.2222
+University completed,216,0.8241,0.3627,0.0
+Some technical,98,0.6735,0.5789,0.3333
+Some university,71,0.5634,0.3832,0.0

@@ -1,0 +1,4 @@
+,age_years,household_size,children_in_household
+age_years,1.0,-0.124,0.61
+household_size,-0.124,1.0,0.289
+children_in_household,0.61,0.289,1.0

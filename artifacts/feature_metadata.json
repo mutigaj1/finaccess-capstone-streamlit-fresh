@@ -1,0 +1,365 @@
+{
+  "source_note": "Generated from the saved trained pipeline categories and the FinAccess 2024 Stata value labels. Nonresponse codes that the notebook converted to missing are excluded. Education code 95 is retained because it appears in the trained pipeline categories but was unlabeled in the source data.",
+  "fields": {
+    "county": {
+      "label": "County",
+      "options": [
+        {
+          "label": "Mombasa",
+          "value": 1.0
+        },
+        {
+          "label": "Kwale",
+          "value": 2.0
+        },
+        {
+          "label": "Kilifi",
+          "value": 3.0
+        },
+        {
+          "label": "Tana River",
+          "value": 4.0
+        },
+        {
+          "label": "Lamu",
+          "value": 5.0
+        },
+        {
+          "label": "Taita-Taveta",
+          "value": 6.0
+        },
+        {
+          "label": "Garissa",
+          "value": 7.0
+        },
+        {
+          "label": "Wajir",
+          "value": 8.0
+        },
+        {
+          "label": "Mandera",
+          "value": 9.0
+        },
+        {
+          "label": "Marsabit",
+          "value": 10.0
+        },
+        {
+          "label": "Isiolo",
+          "value": 11.0
+        },
+        {
+          "label": "Meru",
+          "value": 12.0
+        },
+        {
+          "label": "Tharaka-Nithi",
+          "value": 13.0
+        },
+        {
+          "label": "Embu",
+          "value": 14.0
+        },
+        {
+          "label": "Kitui",
+          "value": 15.0
+        },
+        {
+          "label": "Machakos",
+          "value": 16.0
+        },
+        {
+          "label": "Makueni",
+          "value": 17.0
+        },
+        {
+          "label": "Nyandarua",
+          "value": 18.0
+        },
+        {
+          "label": "Nyeri",
+          "value": 19.0
+        },
+        {
+          "label": "Kirinyaga",
+          "value": 20.0
+        },
+        {
+          "label": "Murang'a",
+          "value": 21.0
+        },
+        {
+          "label": "Kiambu",
+          "value": 22.0
+        },
+        {
+          "label": "Turkana",
+          "value": 23.0
+        },
+        {
+          "label": "West Pokot",
+          "value": 24.0
+        },
+        {
+          "label": "Samburu",
+          "value": 25.0
+        },
+        {
+          "label": "Trans Nzoia",
+          "value": 26.0
+        },
+        {
+          "label": "Uasin Gishu",
+          "value": 27.0
+        },
+        {
+          "label": "Elgeyo-Marakwet",
+          "value": 28.0
+        },
+        {
+          "label": "Nandi",
+          "value": 29.0
+        },
+        {
+          "label": "Baringo",
+          "value": 30.0
+        },
+        {
+          "label": "Laikipia",
+          "value": 31.0
+        },
+        {
+          "label": "Nakuru",
+          "value": 32.0
+        },
+        {
+          "label": "Narok",
+          "value": 33.0
+        },
+        {
+          "label": "Kajiado",
+          "value": 34.0
+        },
+        {
+          "label": "Kericho",
+          "value": 35.0
+        },
+        {
+          "label": "Bomet",
+          "value": 36.0
+        },
+        {
+          "label": "Kakamega",
+          "value": 37.0
+        },
+        {
+          "label": "Vihiga",
+          "value": 38.0
+        },
+        {
+          "label": "Bungoma",
+          "value": 39.0
+        },
+        {
+          "label": "Busia",
+          "value": 40.0
+        },
+        {
+          "label": "Siaya",
+          "value": 41.0
+        },
+        {
+          "label": "Kisumu",
+          "value": 42.0
+        },
+        {
+          "label": "Homabay",
+          "value": 43.0
+        },
+        {
+          "label": "Migori",
+          "value": 44.0
+        },
+        {
+          "label": "Kisii",
+          "value": 45.0
+        },
+        {
+          "label": "Nyamira",
+          "value": 46.0
+        },
+        {
+          "label": "Nairobi City",
+          "value": 47.0
+        }
+      ]
+    },
+    "sex": {
+      "label": "Sex",
+      "options": [
+        {
+          "label": "Male",
+          "value": 1.0
+        },
+        {
+          "label": "Female",
+          "value": 2.0
+        }
+      ]
+    },
+    "education": {
+      "label": "Education",
+      "options": [
+        {
+          "label": "None",
+          "value": 1.0
+        },
+        {
+          "label": "Some primary",
+          "value": 2.0
+        },
+        {
+          "label": "Primary completed",
+          "value": 3.0
+        },
+        {
+          "label": "Some secondary",
+          "value": 4.0
+        },
+        {
+          "label": "Secondary completed",
+          "value": 5.0
+        },
+        {
+          "label": "Some technical training after secondary school",
+          "value": 6.0
+        },
+        {
+          "label": "Completed technical training after secondary school",
+          "value": 7.0
+        },
+        {
+          "label": "Some university",
+          "value": 8.0
+        },
+        {
+          "label": "University completed",
+          "value": 9.0
+        },
+        {
+          "label": "Other (Specify)",
+          "value": 10.0
+        },
+        {
+          "label": "Education code 95 (unlabeled in source data)",
+          "value": 95.0
+        }
+      ]
+    },
+    "marital_status": {
+      "label": "Marital status",
+      "options": [
+        {
+          "label": "Single / Never married",
+          "value": 1.0
+        },
+        {
+          "label": "Divorced / Separated",
+          "value": 2.0
+        },
+        {
+          "label": "Widowed",
+          "value": 3.0
+        },
+        {
+          "label": "Married / Living with partner",
+          "value": 4.0
+        }
+      ]
+    },
+    "livelihood": {
+      "label": "Livelihood",
+      "options": [
+        {
+          "label": "Agriculture",
+          "value": 1.0
+        },
+        {
+          "label": "Employed",
+          "value": 2.0
+        },
+        {
+          "label": "Casual worker",
+          "value": 3.0
+        },
+        {
+          "label": "Own business",
+          "value": 4.0
+        },
+        {
+          "label": "Dependent",
+          "value": 5.0
+        },
+        {
+          "label": "Other",
+          "value": 6.0
+        }
+      ]
+    },
+    "can_access_internet": {
+      "label": "Internet access",
+      "options": [
+        {
+          "label": "No internet access",
+          "value": 0.0
+        },
+        {
+          "label": "Can access internet",
+          "value": 1.0
+        }
+      ]
+    },
+    "internet_frequency": {
+      "label": "Internet frequency",
+      "options": [
+        {
+          "label": "Daily",
+          "value": 1.0
+        },
+        {
+          "label": "Weekly",
+          "value": 2.0
+        },
+        {
+          "label": "Monthly",
+          "value": 3.0
+        },
+        {
+          "label": "Less often",
+          "value": 4.0
+        },
+        {
+          "label": "Never",
+          "value": 5.0
+        }
+      ]
+    },
+    "financial_health": {
+      "label": "Financial health",
+      "options": [
+        {
+          "label": "High",
+          "value": 1.0
+        },
+        {
+          "label": "Medium",
+          "value": 2.0
+        },
+        {
+          "label": "Low",
+          "value": 3.0
+        }
+      ]
+    }
+  }
+}

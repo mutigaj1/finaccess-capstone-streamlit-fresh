@@ -1,0 +1,11 @@
+group,rows,accuracy,macro_f1,excluded_recall
+County code 12,148,0.6757,0.5544,0.2273
+County code 32,116,0.6293,0.4724,0.1429
+County code 47,114,0.6404,0.4431,0.0
+County code 3,108,0.6759,0.5849,0.4231
+County code 22,105,0.7238,0.6892,0.5
+County code 44,105,0.7143,0.6673,0.3824
+County code 39,102,0.6667,0.5488,0.1818
+County code 43,101,0.6832,0.5718,0.2381
+County code 21,100,0.63,0.5086,0.1429
+County code 27,100,0.61,0.5575,0.3
