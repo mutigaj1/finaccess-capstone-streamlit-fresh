@@ -10,18 +10,14 @@ import pandas as pd
 import streamlit as st
 
 from utils.config import (
+    APP_ROOT,
     EXPECTED_ARTIFACT_FILENAMES,
     EXPECTED_FIGURE_FILENAMES,
     LOCAL_ARTIFACTS_DIR,
     LOCAL_FIGURES_DIR,
     SOURCE_ARTIFACTS_DIR,
-    SOURCE_DATA_FILE,
     SOURCE_FIGURES_DIR,
-    SOURCE_GUIDELINES_DOCX,
-    SOURCE_MANUAL_PDF,
-    SOURCE_NOTEBOOK,
-    SOURCE_PROPOSAL_DOCX,
-    SOURCE_QUESTIONNAIRE_PDF,
+    SOURCE_PROJECT_ROOT,
 )
 from utils.content import CLASS_ORDER, DEFAULT_METADATA, MODEL_FEATURE_ORDER
 
@@ -55,6 +51,10 @@ def _find_first_existing(filename: str, directories: list[Path]) -> Path | None:
         if candidate.exists():
             return candidate
     return None
+
+
+def _candidate_source_dirs() -> list[Path]:
+    return [APP_ROOT, SOURCE_PROJECT_ROOT]
 
 
 def _read_json(path: Path) -> dict[str, Any]:
@@ -158,34 +158,35 @@ def load_artifact_bundle() -> ArtifactBundle:
 
 
 def get_reference_files() -> list[dict[str, Any]]:
+    source_dirs = _candidate_source_dirs()
     files = [
         {
             "label": "Notebook (.ipynb)",
-            "path": SOURCE_NOTEBOOK if SOURCE_NOTEBOOK.exists() else None,
+            "path": _find_first_existing("FINACCESS_MASTER_PROJECT_NOTEBOOK.ipynb", source_dirs),
             "mime": "application/x-ipynb+json",
             "category": "Source project file",
         },
         {
             "label": "Proposal update (.docx)",
-            "path": SOURCE_PROPOSAL_DOCX if SOURCE_PROPOSAL_DOCX.exists() else None,
+            "path": _find_first_existing("Mutiga Proposal Feedback 2 updated.docx", source_dirs),
             "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             "category": "Source project file",
         },
         {
             "label": "Project guidelines (.docx)",
-            "path": SOURCE_GUIDELINES_DOCX if SOURCE_GUIDELINES_DOCX.exists() else None,
+            "path": _find_first_existing("_Project Guidelines- Machine Learning Project.docx", source_dirs),
             "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             "category": "Source project file",
         },
         {
             "label": "FinAccess manual (.pdf)",
-            "path": SOURCE_MANUAL_PDF if SOURCE_MANUAL_PDF.exists() else None,
+            "path": _find_first_existing("FinAccess 2024 Manual.pdf", source_dirs),
             "mime": "application/pdf",
             "category": "Source project file",
         },
         {
             "label": "FinAccess questionnaire (.pdf)",
-            "path": SOURCE_QUESTIONNAIRE_PDF if SOURCE_QUESTIONNAIRE_PDF.exists() else None,
+            "path": _find_first_existing("2024 FinAccess Questionnaire.pdf", source_dirs),
             "mime": "application/pdf",
             "category": "Source project file",
         },
@@ -221,7 +222,7 @@ def get_reference_files() -> list[dict[str, Any]]:
         },
         {
             "label": "Cleaned survey data (.dta)",
-            "path": SOURCE_DATA_FILE if SOURCE_DATA_FILE.exists() else None,
+            "path": _find_first_existing("2024_Finaccess_Publicdata.dta", source_dirs),
             "mime": "application/octet-stream",
             "category": "Source project file",
         },
