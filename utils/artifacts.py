@@ -8,6 +8,7 @@ from typing import Any
 import joblib
 import pandas as pd
 import streamlit as st
+from sklearn.impute import SimpleImputer
 
 from utils.config import (
     APP_ROOT,
@@ -75,6 +76,37 @@ def _load_csv_if_exists(path: Path | None) -> pd.DataFrame | None:
         return None
 
 
+def _patch_loaded_model_for_sklearn_compat(model: Any) -> int:
+    seen: set[int] = set()
+
+    def visit(obj: Any) -> int:
+        obj_id = id(obj)
+        if obj_id in seen:
+            return 0
+        seen.add(obj_id)
+
+        patched = 0
+        if isinstance(obj, SimpleImputer) and not hasattr(obj, "_fill_dtype"):
+            obj._fill_dtype = getattr(obj, "_fit_dtype", getattr(getattr(obj, "statistics_", None), "dtype", object))
+            patched += 1
+
+        if isinstance(obj, dict):
+            for value in obj.values():
+                patched += visit(value)
+        elif isinstance(obj, (list, tuple, set)):
+            for value in obj:
+                patched += visit(value)
+        else:
+            state = getattr(obj, "__dict__", None)
+            if state:
+                for value in state.values():
+                    patched += visit(value)
+
+        return patched
+
+    return visit(model)
+
+
 def load_artifact_bundle() -> ArtifactBundle:
     bundle = ArtifactBundle(prediction_mode="stub")
 
@@ -125,6 +157,11 @@ def load_artifact_bundle() -> ArtifactBundle:
     if pipeline_path and metadata_path:
         try:
             bundle.model = joblib.load(pipeline_path)
+            patched_count = _patch_loaded_model_for_sklearn_compat(bundle.model)
+            if patched_count:
+                bundle.warnings.append(
+                    "Applied compatibility fixes to the saved pipeline for newer scikit-learn runtimes."
+                )
             bundle.prediction_mode = "artifact"
             if not bundle.model_name or bundle.model_name == "Stub heuristic predictor":
                 bundle.model_name = "Artifact-backed model"
